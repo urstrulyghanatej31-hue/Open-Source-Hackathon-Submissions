@@ -23,16 +23,16 @@ Participants must submit their open source projects by creating a Pull Request i
 
 3. Fork this repository to your GitHub account.
 
-4. Navigate to the `submissions/` folder and copy the template file:
+4. Navigate to the `submissions` folder and copy the template file:
 
    ```
-   Submission/open source hack/open-source-hack/smart_resume_shortlisting
+   
    ```
 
 5. Rename the copied file using your project name. For example:
 
    ```
-   Submission/open source hack/open-source-hack/smart_resume_shortlisting
+   
    ```
 
 6. Fill in all the required project details inside the markdown file, including:
@@ -40,8 +40,39 @@ Participants must submit their open source projects by creating a Pull Request i
    * Participant Name Ghanatej.P
    * Team Name tech titans
    * Project Title smart resume shortlisting
-   * Project Description 
-   * Tech Stack
+   * Project Description Smart Resume Shortlisting System is an AI-powered recruitment platform designed to automate and optimize the resume screening process. The system analyzes resumes and compares them against predefined job descriptions using Natural Language Processing (NLP) and Machine Learning techniques. It evaluates candidate skills, experience, education, certifications, and keyword relevance to generate an intelligent shortlisting score.
+
+The platform provides recruiters with a user-friendly dashboard where they can upload resumes, review candidate rankings, filter applicants based on various criteria, and download structured shortlists. By reducing manual effort and minimizing screening bias, the system helps organizations make faster and more data-driven hiring decisions.
+
+
+   * Tech Stack Tech Stack
+
+Frontend:
+• HTML5
+• CSS3
+• JavaScript
+• Streamlit
+
+Backend:
+• Python
+
+Machine Learning:
+• Scikit-learn
+• TF-IDF Vectorization
+• Logistic Regression
+
+Data Processing:
+• Pandas
+• NumPy
+
+AI/NLP:
+• Resume Parsing
+• Keyword Matching
+• Candidate Relevance Scoring
+
+Tools:
+• Git
+• GitHub
    * GitHub Repository Link https://github.com/urstrulyghanatej31-hue/open-source-hack
    * Demo/Deployment Link (if available)
 
