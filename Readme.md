@@ -26,23 +26,23 @@ Participants must submit their open source projects by creating a Pull Request i
 4. Navigate to the `submissions/` folder and copy the template file:
 
    ```
-   submissions/PROJECT_NAME.md
+   Submission/open source hack/open-source-hack/smart_resume_shortlisting
    ```
 
 5. Rename the copied file using your project name. For example:
 
    ```
-   submissions/AgriGPT.md
+   Submission/open source hack/open-source-hack/smart_resume_shortlisting
    ```
 
 6. Fill in all the required project details inside the markdown file, including:
 
-   * Participant Name
-   * Team Name
-   * Project Title
-   * Project Description
+   * Participant Name Ghanatej.P
+   * Team Name tech titans
+   * Project Title smart resume shortlisting
+   * Project Description 
    * Tech Stack
-   * GitHub Repository Link
+   * GitHub Repository Link https://github.com/urstrulyghanatej31-hue/open-source-hack
    * Demo/Deployment Link (if available)
 
 7. Commit your changes and push them to your forked repository.
