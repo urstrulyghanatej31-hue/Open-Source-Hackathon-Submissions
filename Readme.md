@@ -74,7 +74,7 @@ Tools:
 • Git
 • GitHub
    * GitHub Repository Link https://github.com/urstrulyghanatej31-hue/open-source-hack
-   * Demo/Deployment Link (if available)
+   * Demo/Deployment Link  (if available)
 
 7. Commit your changes and push them to your forked repository.
 
