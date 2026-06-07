@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Resume Shortlisting System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="#home">SmartHire AI</a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#pipeline">ML Pipeline</a>
+        <a href="#demo">Demo</a>
+      </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">AI Powered Recruitment Platform</p>
+        <h1>Smart Resume Shortlisting System</h1>
+        <p>
+          Automate resume screening, score applicants against job descriptions,
+          and help recruiters identify the most relevant candidates faster.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#demo">Try Demo</a>
+          <a class="secondary-link" href="#features">Explore Features</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="metric">
+          <span>80%</span>
+          <p>Screening time reduction</p>
+        </div>
+        <div class="metric">
+          <span>0-100</span>
+          <p>Candidate shortlist score</p>
+        </div>
+        <div class="metric">
+          <span>NLP</span>
+          <p>Skill and keyword analysis</p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="section two-column" id="overview">
+      <div>
+        <p class="eyebrow">Overview</p>
+        <h2>Data-driven hiring with less manual screening</h2>
+      </div>
+      <p>
+        Recruiters often receive hundreds of resumes for a single job opening.
+        Manual review is slow, inconsistent, and can introduce unconscious bias.
+        This system uses Machine Learning and Natural Language Processing to
+        parse resumes, evaluate relevance, and rank candidates for a specific job role.
+      </p>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-title">
+        <p class="eyebrow">Key Features</p>
+        <h2>Built for candidates, recruiters, and AI scoring</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="card">
+          <h3>Candidate Features</h3>
+          <ul>
+            <li>Upload resumes in PDF or DOCX format</li>
+            <li>View application status</li>
+            <li>Manage candidate profile details</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Recruiter Features</h3>
+          <ul>
+            <li>Create and manage job descriptions</li>
+            <li>Upload multiple resumes</li>
+            <li>Filter, rank, and download shortlists</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>AI/ML Features</h3>
+          <ul>
+            <li>Resume parsing and skill extraction</li>
+            <li>Keyword and experience analysis</li>
+            <li>Resume-job similarity scoring</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="architecture">
+      <div class="section-title">
+        <p class="eyebrow">System Architecture</p>
+        <h2>From resume upload to ranked shortlist</h2>
+      </div>
+
+      <div class="steps">
+        <div>Recruiter uploads job description</div>
+        <div>Candidates upload resumes</div>
+        <div>Parser extracts skills, education, experience, and certifications</div>
+        <div>NLP engine preprocesses resume text</div>
+        <div>ML model calculates matching score</div>
+        <div>Dashboard displays ranked candidates</div>
+      </div>
+    </section>
+
+    <section class="section split" id="pipeline">
+      <div>
+        <p class="eyebrow">Machine Learning Pipeline</p>
+        <h2>Scoring signals</h2>
+        <div class="tag-list">
+          <span>Skill Match Score</span>
+          <span>Experience Match Score</span>
+          <span>Education Match Score</span>
+          <span>Certification Score</span>
+          <span>Keyword Frequency</span>
+          <span>Semantic Similarity</span>
+        </div>
+      </div>
+
+      <div>
+        <p class="eyebrow">Technology Stack</p>
+        <h2>Suggested implementation</h2>
+        <div class="stack-grid">
+          <span>React.js</span>
+          <span>Tailwind CSS</span>
+          <span>Python</span>
+          <span>Flask/FastAPI</span>
+          <span>PostgreSQL</span>
+          <span>MongoDB</span>
+          <span>scikit-learn</span>
+          <span>SpaCy</span>
+          <span>Sentence Transformers</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section demo-section" id="demo">
+      <div class="section-title">
+        <p class="eyebrow">Interactive Demo</p>
+        <h2>Rank sample applicants</h2>
+      </div>
+
+      <div class="demo-layout">
+        <aside class="demo-controls">
+          <label for="jobDescription">Job Description</label>
+          <textarea id="jobDescription" rows="9">Looking for a Machine Learning Engineer with strong NLP, Python, feature engineering, scikit-learn, and experience building recruiter-facing dashboards.</textarea>
+
+          <label for="scoreThreshold">Minimum Score: <strong id="thresholdValue">35%</strong></label>
+          <input id="scoreThreshold" type="range" min="0" max="100" value="35">
+
+          <label for="maxCandidates">Maximum Candidates</label>
+          <input id="maxCandidates" type="number" min="1" max="20" value="8">
+
+          <div class="button-row">
+            <button id="rankBtn" type="button">Rank Candidates</button>
+            <button id="resetBtn" class="light-btn" type="button">Reset</button>
+          </div>
+        </aside>
+
+        <div class="results-panel">
+          <div class="summary-grid">
+            <div>
+              <span id="totalCandidates">0</span>
+              <p>Total Applications</p>
+            </div>
+            <div>
+              <span id="shortlistedCount">0</span>
+              <p>Shortlisted</p>
+            </div>
+            <div>
+              <span id="topScore">0%</span>
+              <p>Top Match</p>
+            </div>
+          </div>
+
+          <div class="table-header">
+            <h3>Ranked Candidates</h3>
+            <button id="downloadBtn" class="light-btn" type="button">Download CSV</button>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Candidate</th>
+                  <th>Role</th>
+                  <th>Experience</th>
+                  <th>Skills</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+              <tbody id="resultsBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="outcomes">
+      <div class="section-title">
+        <p class="eyebrow">Expected Outcomes</p>
+        <h2>Hackathon project impact</h2>
+      </div>
+
+      <div class="outcome-grid">
+        <div>Reduce resume screening time</div>
+        <div>Improve recruiter productivity</div>
+        <div>Enable better candidate-job matching</div>
+        <div>Support scalable hiring workflows</div>
+        <div>Encourage data-driven recruitment decisions</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed as a Hackathon Project for AI-powered Recruitment and HR-Tech Solutions.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
